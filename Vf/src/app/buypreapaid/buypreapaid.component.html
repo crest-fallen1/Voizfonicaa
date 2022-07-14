@@ -1,0 +1,56 @@
+<!--<form #buypreform="ngForm" (ngSubmit)="preb(buypreform.value)" >-->
+
+
+
+<!--  Name: <input type="text" ngModel name="name_pre" > <br> <br>-->
+
+<!--  Mobile number : <input type="number" ngModel name="phone_pre" > <br> <br>-->
+<!--  Location: <input type="text" ngModel name="location_pre" > <br> <br>-->
+<!--  Email:<input type="email" ngModel name="email_pre"> <br> <br>-->
+<!--  New customer id : <input type="number" ngModel name="cidnew_pre" > <br> <br>-->
+<!--  <button>Submit</button>-->
+<!--  <a class="nav-link" routerLink="/reprepaid">Click here&nbsp;</a>-->
+<!--<router-outlet></router-outlet>-->
+<!--</form>-->
+<div class="login-box">
+  <h2>Prepaid-Buy new connection</h2>
+  <form #buypreform="ngForm" (ngSubmit)="preb(buypreform.value)">
+    <div class="user-box">
+      <input type="text" ngModel name="name_pre" required="">
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="phone_pre" required="required">
+      <label>Mobile number</label>
+    </div>
+    <div class="user-box">
+      <input type="text" ngModel name="location_pre" required="required">
+      <label>Location</label>
+    </div>
+    <div class="user-box">
+      <input type="email" ngModel name="email_pre" required="required">
+      <label>Mail id</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="cidnew_pre" required="required">
+      <label>New customer id</label>
+    </div>
+    <button>Submit</button>
+    <a class="nav-link" routerLink="/reprepaid">Recharge</a>
+    <router-outlet></router-outlet>
+  </form>
+</div>
+
+
+
+
+
+
+<!--<form #userform="NgForm" (ngSubmit)="get()">-->
+<!--  Enter your name:<input type="text" name="cname" formControlName="name1"><br>-->
+<!--  Phone number:<input type="number" name="pnumber" formControlName="phno1"><br>-->
+<!--  Address:<input type="text" name="address" formControlName="addr1"><br>-->
+<!--  Location:<input type="text" name="location" formControlName="loc1"><br>-->
+<!--  Email:<input type="email" name="mailid" formControlName="mail1"><br>-->
+<!--  <button>Submit</button>-->
+<!--</form>-->

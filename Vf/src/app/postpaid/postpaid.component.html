@@ -1,0 +1,32 @@
+<div class="login-box">
+  <h2>Plans-Postpaid</h2>
+</div>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Plan ID</th>
+      <th scope="col">Plan name</th>
+      <th scope="col">Validity</th>
+      <th scope="col">Price</th>
+      <th scope="col"></th>
+<!--      <th scope="col">Recharge</th>-->
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item2 of items2">
+    <td>{{item2.post_id}}</td>
+    <td>{{item2.post_plan}}</td>
+    <td>{{item2.post_validity}}</td>
+    <td>{{item2.post_price}}</td>
+      <a class="nav-link" routerLink="/buypostpaid">New connection</a>
+        <a class="nav-link" routerLink="/repostpaid">Recharge</a>
+    {{ error?.message }}
+      <router-outlet></router-outlet>
+    </tr>
+
+  </tbody>
+</table>
+
+

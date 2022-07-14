@@ -1,0 +1,41 @@
+<div class="login-box">
+  <h2>Recharge-Prepaid</h2>
+  <form #rechargedongleform="ngForm" (ngSubmit)="dongler(rechargedongleform.value)">
+    <div class="user-box">
+      <input type="number" ngModel name="mob_d" required="required">
+      <label>Mobile number</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="cid_d" required="required">
+      <label>Customer id</label>
+    </div>
+     <div class="user-box">
+      <input type="text" ngModel name="cname_d" required="required">
+      <label>Name</label>
+    </div>
+
+    <div class="user-box">
+      <input type="number" ngModel name="amount_d" required="required">
+      <label>Amount</label>
+    </div>
+    <button>Submit</button>
+    <button (click)="greet3()">Recharge</button>
+  </form>
+</div>
+
+
+
+
+
+
+<!--<form #rechargedongleform="ngForm" (ngSubmit)="dongler(rechargedongleform.value)" >-->
+<!--  Mobile number : <input type="number" ngModel name="mob_d" > <br> <br>-->
+<!--  Customer id : <input type="number" ngModel name="cid_d" > <br> <br>-->
+<!--  Name: <input type="text" ngModel name="cname_d" > <br> <br>-->
+<!--  Amount:<input type="number" ngModel name="amount_d"> <br> <br>-->
+<!--  <button>Submit</button>-->
+<!--  <button (click)="greet3()">Recharge</button>-->
+
+
+<!--</form>-->
+

@@ -1,0 +1,38 @@
+
+<div class="login-box">
+  <h2>Recharge-Prepaid</h2>
+  <form #rechargepreform="ngForm" (ngSubmit)="prer(rechargepreform.value)">
+    <div class="user-box">
+      <input type="number" ngModel name="mob_pre" required="required">
+      <label>Mobile number</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="cid_pre" required="required">
+      <label>Customer id</label>
+    </div>
+     <div class="user-box">
+      <input type="text" ngModel name="cname_pre" required="required">
+      <label>Name</label>
+    </div>
+
+    <div class="user-box">
+      <input type="number" ngModel name="amount_pre" required="required">
+      <label>Amount</label>
+    </div>
+    <button>Submit</button>
+    <button (click)="greet()">Recharge</button>
+  </form>
+</div>
+
+
+<!--<form #rechargepreform="ngForm" (ngSubmit)="prer(rechargepreform.value)" >-->
+<!--  Mobile number : <input type="number" ngModel name="mob_pre" > <br> <br>-->
+<!--  Customer id : <input type="number" ngModel name="cid_pre" > <br> <br>-->
+<!--  Name: <input type="text" ngModel name="cname_pre" > <br> <br>-->
+<!--  Amount:<input type="number" ngModel name="amount_pre"> <br> <br>-->
+<!--  <button>Submit</button>-->
+<!--  <button (click)="greet()">Recharge</button>-->
+
+
+<!--</form>-->
+

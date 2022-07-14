@@ -1,0 +1,51 @@
+<div class="login-box">
+  <h2>Recharge-Postpaid</h2>
+  <form #rechargepostform="ngForm" (ngSubmit)="postr(rechargepostform.value)">
+    <div class="user-box">
+      <input type="number" ngModel name="mob_post" required="required">
+      <label>Mobile number</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="cid_post" required="required">
+      <label>Customer id</label>
+    </div>
+     <div class="user-box">
+      <input type="text" ngModel name="cname_post" required="required">
+      <label>Name</label>
+    </div>
+
+    <div class="user-box">
+      <input type="number" ngModel name="amount_post" required="required">
+      <label>Amount</label>
+    </div>
+    <button>Submit</button>
+    <button (click)="greet2()">Recharge</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<form #rechargepostform="ngForm" (ngSubmit)="postr(rechargepostform.value)" >-->
+<!--  Mobile number : <input type="number" ngModel name="mob_post" > <br> <br>-->
+<!--  Customer id : <input type="number" ngModel name="cid_post" > <br> <br>-->
+<!--  Name: <input type="text" ngModel name="cname_post" > <br> <br>-->
+<!--  Amount:<input type="number" ngModel name="amount_price"> <br> <br>-->
+<!--  <button>Submit</button>-->
+<!--  <a class="nav-link" routerLink="/">Submit&nbsp;</a>-->
+<!--  <button (click)="greet2()">Recharge</button>-->
+
+
+<!--</form>-->
+

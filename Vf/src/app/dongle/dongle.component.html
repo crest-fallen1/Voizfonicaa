@@ -1,0 +1,28 @@
+<div class="login-box">
+  <h2>Plans-Dongle</h2>
+</div>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Plan ID</th>
+      <th scope="col">Plan name</th>
+      <th scope="col">Validity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Buy new connection</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item3 of items3">
+    <td>{{item3.d_id}}</td>
+    <td>{{item3.d_plan}}</td>
+    <td>{{item3.d_validity}}</td>
+    <td>{{item3.d_price}}</td>
+     <a class="nav-link" routerLink="/buydongle">New connection</a>
+       <a class="nav-link" routerLink="/redongle">Recharge</a>
+    {{ error?.message }}
+      <router-outlet></router-outlet>
+    </tr>
+  </tbody>
+</table>

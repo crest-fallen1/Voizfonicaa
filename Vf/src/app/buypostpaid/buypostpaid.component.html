@@ -1,0 +1,77 @@
+<div class="login-box">
+  <h2>Postpaid-Buy new connection</h2>
+  <form #buypostform="ngForm" (ngSubmit)="postb(buypostform.value)">
+    <div class="user-box">
+      <input type="text" ngModel name="name_post" required="required">
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="phone_post" required="required">
+      <label>Mobile number</label>
+    </div>
+    <div class="user-box">
+      <input type="text" ngModel name="location_post" required="required">
+      <label>Location</label>
+    </div>
+    <div class="user-box">
+      <input type="email" ngModel name="email_post" required="required">
+      <label>Mail id</label>
+    </div>
+    <div class="user-box">
+      <input type="number" ngModel name="cidnew_post" required="required">
+      <label>New customer id</label>
+    </div>
+    <button>Submit</button>
+    <a class="nav-link" routerLink="/repostpaid">Recharge&nbsp;</a>
+    <router-outlet></router-outlet>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h2>Post paid-New Connection</h2>-->
+
+<!--<form #buypostform="ngForm" (ngSubmit)="postb(buypostform.value)" >-->
+
+
+<!--  Name: <input type="text" ngModel name="name_post" > <br> <br>-->
+
+<!--  Mobile number : <input type="number" ngModel name="phone_post" > <br> <br>-->
+<!--  Location: <input type="text" ngModel name="location_post" > <br> <br>-->
+<!--  Email:<input type="email" ngModel name="email_post"> <br> <br>-->
+<!--  New customer id : <input type="number" ngModel name="cidnew_post" > <br> <br>-->
+<!--  <button>Submit&nbsp;</button>-->
+<!--  <a class="nav-link" routerLink="/repostpaid">Click here&nbsp;</a>-->
+
+
+<!--<router-outlet></router-outlet>-->
+<!--</form>-->
